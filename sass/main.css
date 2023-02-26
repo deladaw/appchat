@@ -425,7 +425,7 @@ p {
 }
 @media (max-width: 767px) {
   html {
-    font-size: 12.5px;
+    font-size: 12.8px;
   }
   html .col-center--l {
     grid-column: span 12 !important;
