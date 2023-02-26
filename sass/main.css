@@ -68,21 +68,21 @@ p {
 
 .heading-primary {
   font-style: "Signika", sans-serif;
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1.5%;
 }
 
 .heading-secondary {
   font-style: "Signika", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 600;
   letter-spacing: 0.5%;
 }
 
 .heading-tertiary {
   font-style: "Signika", sans-serif;
-  font-size: 2.15rem;
+  font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.25%;
 }
@@ -424,9 +424,6 @@ p {
   }
 }
 @media (max-width: 767px) {
-  html {
-    font-size: 12.8px;
-  }
   html .col-center--l {
     grid-column: span 12 !important;
   }
