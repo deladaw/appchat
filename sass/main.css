@@ -367,7 +367,7 @@ p {
   font-size: 5.3125rem;
 }
 .home .premium {
-  background-image: linear-gradient(to right bottom, rgba(255, 141, 60, 0.6980392157), rgba(217, 55, 109, 0.5411764706)), url(/img/home/group-chat-cut.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 141, 60, 0.6980392157), rgba(217, 55, 109, 0.5411764706)), url(../img/home/group-chat-cut.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
