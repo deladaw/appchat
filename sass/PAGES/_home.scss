@@ -1,0 +1,75 @@
+.home {
+  //SECCIÓN VENTAJAS
+  .ventajas {
+    background-color: $colorBaseGrisClaro;
+    align-items: center;
+    padding-bottom: 12.5rem;
+    &__intro {
+      justify-self: center;
+      width: 90%;
+      max-width: 43.75rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 9.375rem;
+    }
+    &__icon {
+      color: $colorPrincipalNaranja;
+      font-size: 5.3125rem;
+    }
+  }
+
+  //SECCIÓN PREMIUM - REVIEWS
+  .premium {
+    background-image: linear-gradient(to right bottom, #ff8d3cb2, #d9376d8a),
+      url(/img/home/group-chat-cut.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    align-content: center;
+    justify-content: center;
+    &__container {
+      padding: 12.5rem 0;
+      position: relative;
+    }
+    &__content {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 1.25rem;
+      height: 18.75rem;
+      background-color: $colorBlancoRoto;
+
+      &-border {
+        width: 50%;
+        align-self: flex-end;
+        margin: 1.875rem;
+      }
+      &-highlight {
+        color: $colorSecundarioMagenta;
+      }
+      &-btn {
+        align-self: center;
+      }
+    }
+    .rating-view {
+      position: absolute;
+      top: 65%;
+      right: 65%;
+    }
+
+    @include mv(490px) {
+      .rating-view {
+        top: 78%;
+        right: 15%;
+      }
+      .premium__content {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

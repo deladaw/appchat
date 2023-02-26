@@ -1,0 +1,6 @@
+//Mixin de Media Query
+@mixin mv($medida: 768) {
+  @media screen and (max-width: $medida) {
+    @content;
+  }
+}

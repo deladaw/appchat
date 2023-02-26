@@ -1,0 +1,47 @@
+.footer {
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    gap: 1.875rem;
+  }
+
+  background-color: $colorBaseGrisClaro;
+  padding-top: 3.8rem;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.5rem;
+    justify-self: center;
+
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &-list--title {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+  }
+  &__bottom {
+    padding-bottom: 3.8rem;
+  }
+
+  //Me suele pasar mucho que a los elemento automáticamente se le añaden un paddin left.
+  &__social {
+    padding-left: 0;
+  }
+
+  @include mv(680px) {
+    .col-center--s {
+      grid-column: 3 / 11;
+    }
+  }
+}

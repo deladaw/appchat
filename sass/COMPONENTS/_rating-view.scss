@@ -1,0 +1,12 @@
+.rating-view {
+  background-color: $colorBaseGrisClaro;
+  padding: 1.875rem;
+  position: relative;
+}
+
+.five-stars {
+  position: absolute;
+  bottom: -0.625rem;
+  right: -0.5rem;
+  max-width: 10rem;
+}

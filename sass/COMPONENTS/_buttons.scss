@@ -1,0 +1,32 @@
+// Botón base
+%boton {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.375rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: $bordeEstandar;
+  color: $colorTipoNegra;
+  border: 2px solid $colorTipoNegra;
+  cursor: pointer;
+  box-shadow: 0.375rem 0.375rem 0 $colorPrincipalNaranja;
+
+  &:hover {
+    color: $colorPrincipalNaranja;
+  }
+}
+
+//boton principal
+.btn {
+  @extend %boton;
+  //Botón secundario
+  &--secondary {
+    @extend %boton;
+    box-shadow: 0.375rem 0.375rem 0 $colorSecundarioMagenta;
+
+    &:hover {
+      color: $colorSecundarioMagenta;
+    }
+  }
+}

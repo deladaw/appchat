@@ -1,0 +1,15 @@
+.card-info {
+  display: flex;
+  gap: 2.8125rem;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $colorBlancoRoto;
+  padding: 1.5625rem;
+  border-radius: $bordeEstandar;
+
+  i {
+    font-size: 5.625rem;
+    color: $colorSecundarioMagenta;
+  }
+}

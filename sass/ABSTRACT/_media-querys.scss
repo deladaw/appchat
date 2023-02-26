@@ -1,0 +1,21 @@
+@media (max-width: 1155px) {
+  html {
+    font-size: 14px;
+  }
+  .grid,
+  .grid-cards-impar {
+    //Esto es para que al hacerse más pequeño, no se quede "pegado" a la pantalla y tenga más espacio en los laterales.
+    width: 92%;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12.5px;
+    .col-center--l {
+      //no me funciona si no es con important, y el selector de especificidad es más alto que el original,
+      //aparte que importo las media querys abajo del todo.
+      grid-column: span 12 !important;
+    }
+  }
+}

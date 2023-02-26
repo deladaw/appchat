@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  min-height: 60vh;
+  &__title {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    align-self: center;
+    &-highlight {
+      color: $colorPrincipalNaranja;
+    }
+    &-subtitle {
+      //el subtítulo lo que puesto de este tamaño porque me gustaba cómo quedaba el "corte"
+      width: 90%;
+      margin-bottom: 1.25rem;
+    }
+    .btn {
+      align-self: flex-start;
+    }
+  }
+
+  &__img {
+    display: grid;
+    img {
+      margin: 1.875rem 0rem;
+      justify-self: center;
+      align-self: center;
+      width: 100%;
+      max-width: 26.25rem;
+    }
+  }
+
+  @include mv(880px) {
+    .header__title {
+      padding-top: 60px;
+    }
+    .col-1-2 {
+      grid-column: span 12;
+    }
+  }
+}

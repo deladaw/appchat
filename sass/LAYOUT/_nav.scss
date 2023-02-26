@@ -1,0 +1,39 @@
+.nav {
+  min-height: 5.8rem;
+  width: 100%;
+
+  &__logo {
+    width: 100%;
+    max-width: 10rem;
+    align-self: center;
+  }
+
+  &__list {
+    display: inline-flex;
+    list-style: none;
+    gap: 3.125rem;
+    align-items: center;
+    justify-self: end;
+    &-item {
+      text-decoration: none;
+      color: $colorTipoGris;
+    }
+  }
+
+  @include mv(500px) {
+    .col-3-4,
+    .col-1-4 {
+      grid-column: 1 / -1;
+    }
+    .nav {
+      &__logo {
+        margin: $center;
+      }
+      &__list {
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+      }
+    }
+  }
+}
